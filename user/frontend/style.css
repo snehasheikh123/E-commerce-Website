@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primarycolor:rgb(134, 134, 183);
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,24 +13,137 @@
 body{
     background-color: aliceblue;
 }
+.hidden{
+    display: none;
+}
+/*-------------header---------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
 .heading{
     display: flex;
     justify-content: space-between;
     height: 8vh;
     background-color: blue;
+    padding: 0 2%;
+    border-bottom: solid 2px rgb(219, 13, 13);
+    
 }
 .left-heading{
+    display: flex;
+     justify-content: center; 
+     align-items: center; 
+    height: inherit;
+}
+.right-heading{
     display: flex;
     justify-content: center;
     align-items: center;
     height: inherit;
 }
-.right-heading{
-    display: flex;
-}
 .logo{
     height: inherit;
+    padding-right: 1rem;
 }
 .logo img{
     height: 100%;
+    border-radius: 50%;
+}
+.login-status{
+    display: flex;
+    color: white;
+
+}
+.login-status *{
+    padding-right: 1rem;
+}
+.cart{
+    color: white;
+}
+.search-form{
+    display: flex;
+}
+input[type="search"],input[type="submit"]{
+
+padding: 10px 15px;
+margin-right: 10px;
+border-radius: 6px;
+}
+input[type="submit"]{
+    background-color: var(--primarycolor) ;
+}
+.navigation {
+    height: 8vh;
+    background-color: yellow !important;
+   
+}
+.navigation ul{
+    display: flex;
+    color: black;
+    height: inherit;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+   
+}
+
+
+.navigation ul li{
+    padding: 0.3rem 1rem;
+    margin-left: 5rem;
+    text-decoration:none ;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    list-style: none;
+    background-color: var(--primarycolor) ;
+    border-radius: 1.4rem;
+}
+
+/*----------------------------------main------------------*/
+main{
+    min-height:  45vh;
+    /* background-color: brown; */
+    margin-top: 16vh;
+   
+}
+/*--------------footer----------------*/
+footer li{
+    transform: all 2s ease-in-out;
+}
+footer li:hover{
+    color: var(--primarycolor);
+    font-size: larger;
+}
+.social-share ul {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+}
+.social-share ul li{
+    margin: 1%;
+}
+.general-info{
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: rgb(213, 206, 206);
+text-transform: capitalize;
+padding: 0 2%;
+
+}
+
+.general-info h3{
+    margin: 25px 0;
+}
+.general-info ul{
+    list-style: none;
+}
+.general-info ul li{
+    margin-bottom: 15px;
 }

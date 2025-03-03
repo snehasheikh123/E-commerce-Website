@@ -2,17 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Copatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/984f6dca84.js" crossorigin="anonymous"></script>  </head>
+    <script src="https://kit.fontawesome.com/984f6dca84.js" crossorigin="anonymous"></script> 
+    
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   </head>
   <body>
     <header>
+
     <div class="heading">
       <div class="left-heading">
         <div class="logo">
-          <a href="/images/user/frontend/index.html"><img src="/images/logo.png" alt=""/></a>
+          <a href="/images/user/frontend/index.html"><img src="/ecommerce/images/logo.png" /></a>
         </div>
         <div class="search-bar">
           <form class="search-form">
@@ -22,20 +31,79 @@
         </div>
       </div>
       <div class="right-heading">
-        <div class="login-status">
+          <div class="login-status">
             <div class="login"><i class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></div>
             <div class="register"><i class="fa-solid fa-user-xmark fa-2x"></i></i></div>
             <div class="logout"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i></div>
-            <div class="logged-user"><i class="fa-solid fa-user-check fa-2x"></i> <span class="username">username</span></div>
+            <div class="logged-user "><i class="fa-solid fa-user-check fa-2x"></i> <span class="username">username</span></div>
         </div>
         <div class="cart">
             <i class="fa-solid fa-cart-shopping fa-2x"></i>
-        </div>
+      </div>
+    </div>
     </div>
     <div class="navigation"></div>
-    </header>
-    <main></main>
-    <footer></footer>
-    <script src="user/frontend/global.js"></script>
+
+  </header>
+
+    <main>
+      <section class="banner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-pegination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-share">
+        <ul>
+          <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+          <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+          <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+          <li><i class="fa-brands fa-pinterest fa-2x"></i></li>
+          <li><i class="fa-brands fa-youtube fa-2x"></i></li>
+
+        </ul>
+      </div>
+      <div class="general-info">
+        <div class="help">
+          <h3>Help</h3>
+          <ul>
+            <li>
+              frequently asked question
+            </li>
+            <li>delivery information</li>
+            <li>arrange a return</li>
+            <li>product recall</li>
+            <li>customer services</li>
+          </ul>
+        </div>
+        <div class="store-location">
+          <h3>our location</h3>
+          <ul>
+            <li>paris</li>
+            <li>london</li>
+            <li>new york</li>
+           <li>toronto</li>       
+           <li>hyderabad</li>     
+          </ul>
+        </div>
+        <div class="legal">
+          <h3>
+            privary & legal
+          </h3>
+          <ul>
+            <li>cookies & priavcy Policy</li>
+            <li>term & condition</li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="http://localhost/ecommerce/user/frontend/global.js"></script>
+
   </body>
 </html>
